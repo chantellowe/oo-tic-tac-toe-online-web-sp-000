@@ -97,17 +97,17 @@ class TicTacToe
     won? || draw? 
   end 
   
-  def winner(board)
-    if winner = !won?(board)
-      return nil
+  def winner
+    if winner = !won?
+      nil
     else
-      who_won = board[won?(board)[0]]
+      who_won = @board[won?[0]]
     end
     
     if who_won == "X"
-      return "X"
+      "X"
     elsif who_won == "O"
-      return "O"
+      "O"
     end
   end
   
