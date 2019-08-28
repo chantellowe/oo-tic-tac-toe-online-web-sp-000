@@ -64,13 +64,13 @@ class TicTacToe
     puts "Please enter 1-9:"
     user_input = gets.strip
     index = input_to_index(user_input)
-    if valid_move?(board, index)
-      token = current_player(board)
-      move(board, index, token)
-      display_board(board)
-    else
-      turn(board)
-    end
+      if valid_move?(board, index)
+        token = current_player(board)
+        move(board, index, token)
+        display_board(board)
+      else
+        turn(board)
+      end
   end
   
   
