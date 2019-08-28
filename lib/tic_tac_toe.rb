@@ -97,6 +97,18 @@ class TicTacToe
     won? || draw? 
   end 
   
-  
+  def winner(board)
+    if winner = !won?(board)
+      return nil
+    else
+      who_won = board[won?(board)[0]]
+    end
+    
+    if who_won == "X"
+      return "X"
+    elsif who_won == "O"
+      return "O"
+    end
+  end
   
 end
