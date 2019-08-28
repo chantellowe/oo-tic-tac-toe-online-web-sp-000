@@ -4,7 +4,7 @@ class TicTacToe
    @board = Array.new(9, " ")
  end
  
- def win_combos
+ def win_combinations
    
  end
   
